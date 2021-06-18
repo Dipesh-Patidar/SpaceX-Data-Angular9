@@ -1,0 +1,77 @@
+.grey-bg {
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+.main-head {
+    font-size: 30px;
+}
+
+.bg-white {
+    background-color: #fff;
+    padding: 10px;
+    height: 415px;
+    margin-bottom: 20px;
+}
+
+.bg-white-1 {
+    background-color: #fff;
+    padding: 10px;
+    height: 851px;
+}
+
+.filters h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filters p {
+    font-size: 15px;
+    color: #b9b9b9;
+    text-align: center;
+}
+
+.filters hr {
+    background-color: #b9b9b9;
+}
+
+.lanuch-years a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.lanuch-years a {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    background-color: #c5e09b;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.m10 {
+    margin: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.product-detail h4 {
+    color: #66659c;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.product-detail img {
+    width: 100%;
+    text-align: center;
+}
+
+.product-detail h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}

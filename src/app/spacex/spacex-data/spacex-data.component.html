@@ -1,0 +1,104 @@
+<div>
+    <section class="grey-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="main-head">SpaceX Launch Programs</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 bg-white-1">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="filters">
+                                <h2>Filters</h2>
+                                <p>Launch year</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="lanuch-years">
+                                <a (click)="getYear(2006)">2006</a>
+                                <a (click)="getYear(2008)">2008</a>
+                                <a (click)="getYear(2010)">2010</a>
+                                <a (click)="getYear(2012)">2012</a>
+                                <a (click)="getYear(2014)">2014</a>
+                                <a (click)="getYear(2016)">2016</a>
+                                <a (click)="getYear(2018)">2018</a>
+                                <a (click)="getYear(2020)">2020</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="lanuch-years">
+                                <a (click)="getYear(2007)">2007</a>
+                                <a (click)="getYear(2009)">2009</a>
+                                <a (click)="getYear(2011)">2011</a>
+                                <a (click)="getYear(2013)">2013</a>
+                                <a (click)="getYear(2015)">2015</a>
+                                <a (click)="getYear(2017)">2017</a>
+                                <a (click)="getYear(2019)">2019</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt20">
+                        <div class="col-lg-12">
+                            <div class="filters">
+                                <p>Successful Launch</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="lanuch-years">
+                                <a (click)="getLaunching(true)">True</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="lanuch-years">
+                                <a (click)="getLaunching(false)">False</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt20">
+                        <div class="col-lg-12">
+                            <div class="filters">
+                                <p>Successful Landing</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="lanuch-years">
+                                <a (click)="getLanding(true)">True</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="lanuch-years">
+                                <a (click)="getLanding(false)">False</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3" *ngFor="let year of years">
+                            <div class="product-detail bg-white">
+                                <img src="{{year.links.mission_patch_small}}" alt="">
+                                <h4>{{year.mission_name}} #{{year.flight_number}}</h4>
+                                <h2>Mission IDs :{{year.mission_id}}</h2>
+                                <h2>Launch Year :{{year.launch_year}}</h2>
+                                <h2>Sucessful Launch :{{year.launch_success}}</h2>
+                                <h2>Sucessful Landing :{{year.rocket.first_stage.cores[0].land_success}}</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

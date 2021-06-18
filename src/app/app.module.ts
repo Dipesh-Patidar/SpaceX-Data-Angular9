@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainComponent } from './main/main.component';
+// import { SpacexDataComponent } from './spacex/spacex-data/spacex-data.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    // SpacexDataComponent
   ],
   imports: [
     BrowserModule,
