@@ -23,7 +23,8 @@ export class SpacexService {
   }
   
   getLanding(value):Observable<any>{
-    const urllaunch = `https://api.spaceXdata.com/v3/launches?limit=100&launch_success=${value}&land_success=${value}`
+    
+        const urllaunch = `https://api.spaceXdata.com/v3/launches?limit=100&launch_success=${value}&lan%d_success=${value}`
     return this.http.get<any>(urllaunch)
   }
 

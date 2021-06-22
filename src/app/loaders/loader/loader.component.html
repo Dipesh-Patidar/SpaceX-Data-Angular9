@@ -1,0 +1,17 @@
+<div class="content">
+
+    <br>
+
+    <button mat-raised-button (click)="fetchData()">
+      Fetch Data
+    </button>
+
+</div>
+
+<mat-progress-spinner *ngIf="loading$ | async" [mode]="'indeterminate'"></mat-progress-spinner>
+<ul>
+    <li>ID :{{showcomments.id}} </li>
+    <li>Name :{{showcomments.name}} </li>
+    <li>Email : {{showcomments.email}} </li>
+    <li>Body :{{showcomments.body}}</li>
+</ul>
